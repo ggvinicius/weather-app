@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./src/day-and-night.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <form data-js="form-city">
+            <input type="text" name="city" placeholder="Digite o nome de uma cidade. Exemplo: São Paulo">
+            <input type="reset" value="Limpar">
+        </form>
+
+        <section data-js="weather-infos-area" class="weather-infos none">
+            <h2 data-js="name-city">Nome da cidade</h2>
+            <img data-js="image-time" src="./src/day-and-night.png">
+            <p data-js="temperature" class="temperature">0° C</p>
+
+            <div class="area-infos">
+                <div class="icon-desc">
+                    <img data-js="weather-icon" src="./src/icons/14.svg">
+                    <span data-js="weather">Descrição do clima</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/weather.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
